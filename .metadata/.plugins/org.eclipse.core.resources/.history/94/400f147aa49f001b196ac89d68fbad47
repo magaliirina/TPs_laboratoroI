@@ -31,7 +31,7 @@ for(int i=0;i<2;i++){
 				flag_numeroA=1;
 			}
 			else{
-				printf("\nEste numero ya a sido ingresado\n");
+				printf("Este numero ya a sido ingresado");
 			}
 			break;
 		case 2:
@@ -39,7 +39,7 @@ for(int i=0;i<2;i++){
 				utn_getnumero(&numeroB, "\nIngrese el segundo numero\n", "Error\n", 2);
 				flag_numeroB=1;
 			}
-			printf("\nEste numero ya a sido ingresado\n");
+			printf("Este numero ya a sido ingresado");
 			break;
 		}
 	}

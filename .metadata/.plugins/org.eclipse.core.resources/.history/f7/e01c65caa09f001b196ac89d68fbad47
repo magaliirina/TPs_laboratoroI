@@ -49,7 +49,7 @@ int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reinten
 			}
 			else if(bufferNumero<=maximo&&bufferNumero>=minimo){
 				*numero=bufferNumero;
-				retorno=1;
+				retorno=0;
 				break;
 			}
 		reintentos--;
@@ -57,5 +57,4 @@ int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reinten
 	}
 	return retorno;
 }
-//-----------------------------------------------------------------------------------------------------------------------------------------------
 

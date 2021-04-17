@@ -17,8 +17,8 @@ int main(void) {
 int opcion;
 float numeroA;
 float numeroB;
-int flag_numeroA=0;
-int flag_numeroB=0;
+int flag_numeroA;
+int flag_numeroB;
 int operacion;
 
 for(int i=0;i<2;i++){
@@ -26,20 +26,10 @@ for(int i=0;i<2;i++){
 			"Opcion invalida\n", 2, 2, 1)){
 		switch(opcion){
 		case 1:
-			if(flag_numeroA==0){
-				utn_getnumero(&numeroA, "\nIngrese el primer numero\n", "Error\n", 2);
-				flag_numeroA=1;
-			}
-			else{
-				printf("\nEste numero ya a sido ingresado\n");
-			}
+			utn_getnumero(&numeroA, "\nIngrese el primer numero\n", "Error\n", 2);
 			break;
 		case 2:
-			if(flag_numeroB==0){
-				utn_getnumero(&numeroB, "\nIngrese el segundo numero\n", "Error\n", 2);
-				flag_numeroB=1;
-			}
-			printf("\nEste numero ya a sido ingresado\n");
+			utn_getnumero(&numeroB, "\nIngrese el segundo numero\n", "Error\n", 2);
 			break;
 		}
 	}

@@ -57,5 +57,4 @@ int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reinten
 	}
 	return retorno;
 }
-//-----------------------------------------------------------------------------------------------------------------------------------------------
 

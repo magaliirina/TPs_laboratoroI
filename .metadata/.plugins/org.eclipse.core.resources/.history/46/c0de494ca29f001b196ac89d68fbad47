@@ -1,0 +1,43 @@
+/*
+ ============================================================================
+ Name        : TP1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio_ext.h>
+#include "utn.h"
+
+int main(void) {
+int opcion;
+float numeroA;
+float numeroB;
+int operacion;
+
+utn_getnumeroRango(&opcion, "Ingrese una opcion\n\n1-Ingresar primer numero\n2-Ingresar segundo numero",
+		"\nOpcion invalida", 2, 2, 1);
+	utn_getnumero(&numeroA, "Ingrese un numero\n", "Error\n", 2);
+	utn_getnumero(&numeroB, "Ingrese un numero\n", "Error\n", 2);
+	if(utn_getnumeroRango(&operacion, "Ingrese una opcion\n", "ERROR\n", 2, 5, 1)){
+		switch(operacion){
+		case 1:
+		case 2:
+		case 3:
+		case 4:
+		case 5:
+		}
+	}
+
+
+
+
+
+
+return 0;
+}
+
