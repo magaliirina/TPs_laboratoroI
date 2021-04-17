@@ -44,7 +44,7 @@ int utn_getnumeroRango(char* numero,char* mensaje, char* mensajeError,int reinte
 		do{
 			printf("%s", mensaje);
 			__fpurge(stdin);
-			if(!scanf("%c",&bufferNumero)||!(bufferNumero<=maximo&&bufferNumero>=minimo)){
+			if(!scanf("%d",&bufferNumero)||!(bufferNumero<=maximo&&bufferNumero>=minimo)){
 				printf("%s",mensajeError);
 			}
 			else if(bufferNumero<=maximo&&bufferNumero>=minimo){

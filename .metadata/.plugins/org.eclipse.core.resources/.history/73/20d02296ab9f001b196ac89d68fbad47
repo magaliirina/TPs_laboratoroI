@@ -36,15 +36,15 @@ int utn_getnumero(float* numero,char* mensaje, char* mensajeError,int reintentos
 	return retorno;
 }
 //----------------------------------------------------------------------------------------------------------------
-int utn_getnumeroRango(char* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo){
+int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo){
 	int retorno=-1;
-	char bufferNumero;
+	int bufferNumero;
 
 	if(numero!=NULL&&mensaje!=NULL&&mensajeError!=NULL&&reintentos>=0&&maximo>=minimo){
 		do{
 			printf("%s", mensaje);
 			__fpurge(stdin);
-			if(!scanf("%c",&bufferNumero)||!(bufferNumero<=maximo&&bufferNumero>=minimo)){
+			if(!scanf("%d",&bufferNumero)||!(bufferNumero<=maximo&&bufferNumero>=minimo)){
 				printf("%s",mensajeError);
 			}
 			else if(bufferNumero<=maximo&&bufferNumero>=minimo){

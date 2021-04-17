@@ -46,6 +46,7 @@ do{
 					printf("\nEste numero ya a sido ingresado\n");
 				}
 				break;
+
 			case 'C':
 				flag_salir=0;
 				i++;

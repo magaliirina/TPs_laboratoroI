@@ -1226,3 +1226,285 @@ make: No se hace nada para 'all'.
 15:26:08 **** Incremental Build of configuration Debug for project TP1 ****
 make all 
 make: No se hace nada para 'all'.
+15:37:19 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+In file included from ../src/TP1.c:14:
+../src/utn.h:13:5: error: conflicting types for ‘utn_getnumeroRango’
+   13 | int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |     ^~~~~~~~~~~~~~~~~~
+../src/utn.h:12:5: note: previous declaration of ‘utn_getnumeroRango’ was here
+   12 | int utn_getnumeroRango(char* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |     ^~~~~~~~~~~~~~~~~~
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:26:24: warning: passing argument 1 of ‘utn_getnumeroRango’ from incompatible pointer type [-Wincompatible-pointer-types]
+   26 |  if(utn_getnumeroRango(&opcion, "Ingrese una opcion\n\nA-Ingresar primer numero\nB-Ingresar segundo numero\n",
+      |                        ^~~~~~~
+      |                        |
+      |                        char *
+In file included from ../src/TP1.c:14:
+../src/utn.h:13:29: note: expected ‘int *’ but argument is of type ‘char *’
+   13 | int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |                        ~~~~~^~~~~~
+../src/TP1.c:31:5: warning: implicit declaration of function ‘utn_getnumero’; did you mean ‘utn_getnumeroRango’? [-Wimplicit-function-declaration]
+   31 |     utn_getnumero(&numeroA, "\nIngrese el primer numero\n", "Error\n", 2);
+      |     ^~~~~~~~~~~~~
+      |     utn_getnumeroRango
+make: *** [src/subdir.mk:23: src/TP1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:38:20 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:31:5: warning: implicit declaration of function ‘utn_getnumero’; did you mean ‘utn_getnumeroRango’? [-Wimplicit-function-declaration]
+   31 |     utn_getnumero(&numeroA, "\nIngrese el primer numero\n", "Error\n", 2);
+      |     ^~~~~~~~~~~~~
+      |     utn_getnumeroRango
+../src/TP1.c:50:23: warning: passing argument 1 of ‘utn_getnumeroRango’ from incompatible pointer type [-Wincompatible-pointer-types]
+   50 | if(utn_getnumeroRango(&operacion, "Ingrese una opcion\n", "ERROR\n", 2, 5, 1)){
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       int *
+In file included from ../src/TP1.c:14:
+../src/utn.h:12:30: note: expected ‘char *’ but argument is of type ‘int *’
+   12 | int utn_getnumeroRango(char* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |                        ~~~~~~^~~~~~
+Finished building: ../src/TP1.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:39:51 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:50:23: warning: passing argument 1 of ‘utn_getnumeroRango’ from incompatible pointer type [-Wincompatible-pointer-types]
+   50 | if(utn_getnumeroRango(&operacion, "Ingrese una opcion\n", "ERROR\n", 2, 5, 1)){
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       int *
+In file included from ../src/TP1.c:14:
+../src/utn.h:13:30: note: expected ‘char *’ but argument is of type ‘int *’
+   13 | int utn_getnumeroRango(char* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |                        ~~~~~~^~~~~~
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:41:03 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:29:3: error: case label does not reduce to an integer constant
+   29 |   case "A":
+      |   ^~~~
+../src/TP1.c:38:3: error: case label does not reduce to an integer constant
+   38 |   case "B":
+      |   ^~~~
+../src/TP1.c:50:23: warning: passing argument 1 of ‘utn_getnumeroRango’ from incompatible pointer type [-Wincompatible-pointer-types]
+   50 | if(utn_getnumeroRango(&operacion, "Ingrese una opcion\n", "ERROR\n", 2, 5, 1)){
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       int *
+In file included from ../src/TP1.c:14:
+../src/utn.h:13:30: note: expected ‘char *’ but argument is of type ‘int *’
+   13 | int utn_getnumeroRango(char* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |                        ~~~~~~^~~~~~
+make: *** [src/subdir.mk:23: src/TP1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:41:56 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:29:3: error: case label does not reduce to an integer constant
+   29 |   case "A":
+      |   ^~~~
+../src/TP1.c:38:3: error: case label does not reduce to an integer constant
+   38 |   case "B":
+      |   ^~~~
+make: *** [src/subdir.mk:23: src/TP1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:43:54 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:29:3: error: case label does not reduce to an integer constant
+   29 |   case "A":
+      |   ^~~~
+../src/TP1.c:38:3: error: case label does not reduce to an integer constant
+   38 |   case "B":
+      |   ^~~~
+../src/TP1.c:52:2: error: case label does not reduce to an integer constant
+   52 |  case "A":
+      |  ^~~~
+../src/TP1.c:55:2: error: case label does not reduce to an integer constant
+   55 |  case "B":
+      |  ^~~~
+../src/TP1.c:58:2: error: case label does not reduce to an integer constant
+   58 |  case "C":
+      |  ^~~~
+../src/TP1.c:61:2: error: case label does not reduce to an integer constant
+   61 |  case "D":
+      |  ^~~~
+../src/TP1.c:66:2: error: case label does not reduce to an integer constant
+   66 |  case "E":
+      |  ^~~~
+make: *** [src/subdir.mk:23: src/TP1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:45:48 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:45:55 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:46:51 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:47:08 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:05:26 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:05:31 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:07:06 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:07:08 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:11:01 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:11:03 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:19:18 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:19:24 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:20:10 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:20:16 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:23:14 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:23:16 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+16:24:11 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+16:24:13 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
