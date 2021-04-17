@@ -1,0 +1,29 @@
+/*
+ ============================================================================
+ Name        : TP1.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio_ext.h>
+#include "utn.h"
+
+int main(void) {
+float resultado;
+//int opcion;
+
+utn_getnumero(&resultado, "Ingrese un numero", "Error", 2);
+//utn_getnumeroRango(&opcion, "Ingrese una opcion", "ERROR", 2, 3, 1);
+
+
+
+
+
+return 0;
+}
+

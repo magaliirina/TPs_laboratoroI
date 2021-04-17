@@ -14,23 +14,21 @@ void utn_imprimirMensaje (char* mensaje){
 	printf("%s",mensaje);
 }
 //------------------------------------------------------------------------------------------------------------
-int utn_getnumero(float* numero,char* mensaje, char* mensajeError,int reintentos,int limite){
+int utn_getnumero(float* numero,char* mensaje, char* mensajeError,int reintentos){
 	int retorno=-1;
 	float bufferNumero;
 
 	do{
-		for(int i=0;i<limite;i++){
-			if(numero!=NULL&&mensaje!=NULL){
-				printf("%s", mensaje);
-				__fpurge(stdin);
-				if(!scanf("%f",&bufferNumero)){
-					printf("%s",mensajeError);
-					break;
-				}
-				else{
-					*numero=bufferNumero;
-					retorno=0;
-				}
+		if(numero!=NULL&&mensaje!=NULL){
+			printf("%s", mensaje);
+			__fpurge(stdin);
+			if(!scanf("%f",&bufferNumero)){
+				printf("%s",mensajeError);
+			}
+			else{
+				*numero=bufferNumero;
+				retorno=0;
+				break;
 			}
 		}
 	reintentos--;
@@ -38,29 +36,25 @@ int utn_getnumero(float* numero,char* mensaje, char* mensajeError,int reintentos
 	return retorno;
 }
 //----------------------------------------------------------------------------------------------------------------
-/*int utn_getNumero(int* pNumeroInt,char* mensaje,char* mensajeError , int minimo, int maximo,int reintentos){
+int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo){
 	int retorno=-1;
-	int auxiliar;
+	int bufferNumero;
 
-	do{
-	printf("%s", mensaje);
-	if(!scanf("%d", &auxiliar)){
-
+	if(numero!=NULL&&mensaje!=NULL&&mensajeError!=NULL&&reintentos>=0&&maximo>=minimo){
+		do{
+			printf("%s", mensaje);
+			__fpurge(stdin);
+			if(!scanf("%d",&bufferNumero)||!(bufferNumero<=maximo&&bufferNumero>=minimo)){
+				printf("%s",mensajeError);
+			}
+			else if(bufferNumero<=maximo&&bufferNumero>=minimo){
+				*numero=bufferNumero;
+				retorno=0;
+				break;
+			}
+		reintentos--;
+		}while(reintentos>0);
 	}
-	if(){
-		if(*pNumeroInt>=minimo && *pNumeroInt<=maximo){
-			retorno=0;
-			break;
-		}
-		else{
-			printf("%s", mensajeError);
-		}
-	}
-	else{
-		printf("%s", mensajeError);
-	}
-	reintentos--;
-	}while(reintentos>0);
-
 	return retorno;
-}*/
+}
+

@@ -12,12 +12,15 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 #include "utn.h"
-#define CANTNUMEROS 2
 
 int main(void) {
-float resultado;
+float numeroA;
+float numeroB;
+int opcion;
 
-utn_getnumero(&resultado, "\nIngrese un numero", "\nOcurrio un Error",2, CANTNUMEROS);
+utn_getnumero(&numeroA, "Ingrese un numero\n", "Error\n", 2);
+utn_getnumero(&numeroB, "Ingrese un numero\n", "Error\n", 2);
+utn_getnumeroRango(&opcion, "Ingrese una opcion\n", "ERROR\n", 2, 3, 1);
 
 
 
