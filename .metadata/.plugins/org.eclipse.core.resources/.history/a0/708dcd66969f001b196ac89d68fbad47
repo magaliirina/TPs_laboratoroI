@@ -1,0 +1,38 @@
+/*
+ * utn.c
+ *
+ *  Created on: 17 abr. 2021
+ *      Author: irina
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdio_ext.h>
+
+
+void utn_imprimirMensaje (char* mensaje){
+	printf("%s",mensaje);
+}
+//------------------------------------------------------------------------------------------------------------
+int utn_getnumero(float* numero,int limite, char* mensaje){
+	int retorno=-1;
+	float bufferNumero;
+
+	for(int i=0;i<limite;i++){
+		if(numero!=NULL&&mensaje!=NULL){
+
+			printf("%s", mensaje);
+			scanf("%f",&bufferNumero);
+			*numero=bufferNumero;
+			retorno=0;
+		}
+	}
+
+	return retorno;
+}
+//----------------------------------------------------------------------------------------------------------------
+int utn_getnumeroRango(int* numero, char* mensaje, char* mensajeError, int maximo, int minimo){
+	int retorno=1;
+
+	return retorno;
+}

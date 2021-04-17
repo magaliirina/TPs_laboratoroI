@@ -1,0 +1,19 @@
+/*
+ * utn.c
+ *
+ *  Created on: 17 abr. 2021
+ *      Author: irina
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void utn_imprimirMensaje (char* mensaje){
+	printf("%s",mensaje);
+}
+
+int utn_get numero(int* numero,char* mensaje,char* mensajeError, int maximo, int minimo){
+	retorno=1;
+
+	return retorno;
+}

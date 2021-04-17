@@ -1,0 +1,13 @@
+/*
+ * utn.c
+ *
+ *  Created on: 17 abr. 2021
+ *      Author: irina
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+
+void utn_imprimirMensaje (char* mensaje){
+	printf("%s",mensaje);
+}
