@@ -15,6 +15,6 @@ int utn_suma(float operador1,float operador2,float* pResultado);
 int utn_resta(float operador1, float operador2, float*pResultado);
 int utn_multiplicacion(float operador1, float operador2, float* pResultado);
 int utn_division(float operador1,float operador2, float* pResultado);
-
+int utn_factorial(float operador, float*presultado);
 
 #endif /* UTN_H_ */

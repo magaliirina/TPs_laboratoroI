@@ -82,4 +82,19 @@ int utn_division(float operador1,float operador2, float* pResultado){
 	return retorno;
 }
 //------------------------------------------------------------------------------------------------------------------------------------------
+int utn_factorial(float operador, float*presultado){
+	int factorial=1;
+	if(operador>0){
+		for(int i=operador; i>0; i--){
+			factorial*=i;
+		}
+	}
+	else if(operador<0){
+		for(int i=operador; i<0; i++){
+			factorial*=i;
+		}
+	}
+	*presultado=factorial;
+	return 0;
+}
 
