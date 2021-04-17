@@ -23,13 +23,14 @@ int operacion;
 float resultado;
 
 for(int i=0;i<2;i++){
-	if(utn_getnumeroRango(&opcion, "Ingrese una opcion\n\n1-Ingresar primer numero\n2-Ingresar segundo numero\n",
+	if(utn_getnumeroRango(&opcion, "Ingrese una opcion\n\nA-Ingresar primer numero\nB-Ingresar segundo numero\n",
 			"Opcion invalida\n", 2, 2, 1)){
 		switch(opcion){
 		case 1:
 			if(flag_numeroA==0){
 				utn_getnumero(&numeroA, "\nIngrese el primer numero\n", "Error\n", 2);
 				flag_numeroA=1;
+				printf("%f",numeroA);
 			}
 			else{
 				printf("\nEste numero ya a sido ingresado\n");
@@ -39,6 +40,7 @@ for(int i=0;i<2;i++){
 			if(flag_numeroB==0){
 				utn_getnumero(&numeroB, "\nIngrese el segundo numero\n", "Error\n", 2);
 				flag_numeroB=1;
+				printf("%f",numeroB);
 			}
 			else{
 				printf("\nEste numero ya a sido ingresado\n");
@@ -50,26 +52,21 @@ for(int i=0;i<2;i++){
 if(utn_getnumeroRango(&operacion, "Ingrese una opcion\n", "ERROR\n", 2, 5, 1)){
 	switch(operacion){
 	case 1:
-		utn_suma(numeroA, numeroB, &resultado);
+		suma(numeroA, numeroB, &resultado);
 		break;
 	case 2:
 		utn_resta(numeroA, numeroB, &resultado);
 		break;
 	case 3:
 		utn_multiplicacion(numeroA, numeroB, &resultado);
-		break;
 	case 4:
-		if(utn_division(numeroA, numeroB, &resultado)==-1){
-			printf("No es posible dividir por cero");
-		}
-		break;
+		utn_division(numeroA, numeroB, &resultado);
 	case 5:
 		printf("HOLA\n");
-		break;
 	}
 }
 
-printf("%.2f",resultado);
+printf("%f",resultado);
 
 
 

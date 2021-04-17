@@ -59,7 +59,7 @@ if(utn_getnumeroRango(&operacion, "Ingrese una opcion\n", "ERROR\n", 2, 5, 1)){
 		utn_multiplicacion(numeroA, numeroB, &resultado);
 		break;
 	case 4:
-		if(utn_division(numeroA, numeroB, &resultado)==-1){
+		if(!(utn_division(numeroA, numeroB, &resultado))){
 			printf("No es posible dividir por cero");
 		}
 		break;

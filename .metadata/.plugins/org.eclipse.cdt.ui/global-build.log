@@ -816,3 +816,413 @@ Finished building target: TP1
 14:42:01 **** Incremental Build of configuration Debug for project TP1 ****
 make all 
 make: No se hace nada para 'all'.
+14:51:37 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:51:26: warning: passing argument 3 of ‘suma’ from incompatible pointer type [-Wincompatible-pointer-types]
+   51 |   suma(numeroA, numeroB, &resultado);
+      |                          ^~~~~~~~~~
+      |                          |
+      |                          float *
+In file included from ../src/TP1.c:14:
+../src/utn.h:14:47: note: expected ‘int *’ but argument is of type ‘float *’
+   14 | int suma(float operador1,float operador2,int* pResultado);
+      |                                          ~~~~~^~~~~~~~~~
+../src/TP1.c:60:10: warning: format ‘%d’ expects argument of type ‘int’, but argument 2 has type ‘int (*)(float,  float,  int *)’ [-Wformat=]
+   60 | printf("%d",suma);
+      |         ~^  ~~~~
+      |          |  |
+      |          |  int (*)(float,  float,  int *)
+      |          int
+Finished building: ../src/TP1.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+14:51:59 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:51:26: warning: passing argument 3 of ‘suma’ from incompatible pointer type [-Wincompatible-pointer-types]
+   51 |   suma(numeroA, numeroB, &resultado);
+      |                          ^~~~~~~~~~
+      |                          |
+      |                          float *
+In file included from ../src/TP1.c:14:
+../src/utn.h:14:47: note: expected ‘int *’ but argument is of type ‘float *’
+   14 | int suma(float operador1,float operador2,int* pResultado);
+      |                                          ~~~~~^~~~~~~~~~
+../src/TP1.c:60:10: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int (*)(float,  float,  int *)’ [-Wformat=]
+   60 | printf("%f",suma);
+      |         ~^  ~~~~
+      |          |  |
+      |          |  int (*)(float,  float,  int *)
+      |          double
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+14:52:41 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+14:52:43 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+14:53:23 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+14:53:39 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+14:57:29 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:53:26: warning: passing argument 3 of ‘suma’ from incompatible pointer type [-Wincompatible-pointer-types]
+   53 |   suma(numeroA, numeroB, &resultado);
+      |                          ^~~~~~~~~~
+      |                          |
+      |                          float *
+In file included from ../src/TP1.c:14:
+../src/utn.h:14:47: note: expected ‘int *’ but argument is of type ‘float *’
+   14 | int suma(float operador1,float operador2,int* pResultado);
+      |                                          ~~~~~^~~~~~~~~~
+../src/TP1.c:62:10: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int (*)(float,  float,  int *)’ [-Wformat=]
+   62 | printf("%f",suma);
+      |         ~^  ~~~~
+      |          |  |
+      |          |  int (*)(float,  float,  int *)
+      |          double
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+14:58:52 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+14:58:55 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:00:28 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:00:30 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:01:24 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:55:26: warning: passing argument 3 of ‘suma’ from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |   suma(numeroA, numeroB, &resultado);
+      |                          ^~~~~~~~~~
+      |                          |
+      |                          float *
+In file included from ../src/TP1.c:14:
+../src/utn.h:14:47: note: expected ‘int *’ but argument is of type ‘float *’
+   14 | int suma(float operador1,float operador2,int* pResultado);
+      |                                          ~~~~~^~~~~~~~~~
+../src/TP1.c:64:10: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int (*)(float,  float,  int *)’ [-Wformat=]
+   64 | printf("%f",suma);
+      |         ~^  ~~~~
+      |          |  |
+      |          |  int (*)(float,  float,  int *)
+      |          double
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:02:53 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:02:54 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:03:27 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:03:30 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:04:02 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:55:26: warning: passing argument 3 of ‘suma’ from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |   suma(numeroA, numeroB, &resultado);
+      |                          ^~~~~~~~~~
+      |                          |
+      |                          float *
+In file included from ../src/TP1.c:14:
+../src/utn.h:14:47: note: expected ‘int *’ but argument is of type ‘float *’
+   14 | int suma(float operador1,float operador2,int* pResultado);
+      |                                          ~~~~~^~~~~~~~~~
+../src/TP1.c:64:10: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int (*)(float,  float,  int *)’ [-Wformat=]
+   64 | printf("%f",suma);
+      |         ~^  ~~~~
+      |          |  |
+      |          |  int (*)(float,  float,  int *)
+      |          double
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:04:36 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:64:10: warning: format ‘%f’ expects argument of type ‘double’, but argument 2 has type ‘int (*)(float,  float,  float *)’ [-Wformat=]
+   64 | printf("%f",suma);
+      |         ~^  ~~~~
+      |          |  |
+      |          |  int (*)(float,  float,  float *)
+      |          double
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:05:08 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:05:10 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:07:01 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:07:03 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:09:32 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:29:3: error: case label does not reduce to an integer constant
+   29 |   case "A":
+      |   ^~~~
+../src/TP1.c:39:3: error: case label does not reduce to an integer constant
+   39 |   case "B":
+      |   ^~~~
+make: *** [src/subdir.mk:23: src/TP1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:10:24 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:26:24: warning: passing argument 1 of ‘utn_getnumeroRango’ from incompatible pointer type [-Wincompatible-pointer-types]
+   26 |  if(utn_getnumeroRango(&opcion, "Ingrese una opcion\n\nA-Ingresar primer numero\nB-Ingresar segundo numero\n",
+      |                        ^~~~~~~
+      |                        |
+      |                        char *
+In file included from ../src/TP1.c:14:
+../src/utn.h:13:29: note: expected ‘int *’ but argument is of type ‘char *’
+   13 | int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reintentos, int maximo, int minimo);
+      |                        ~~~~~^~~~~~
+../src/TP1.c:29:3: error: case label does not reduce to an integer constant
+   29 |   case "A":
+      |   ^~~~
+../src/TP1.c:39:3: error: case label does not reduce to an integer constant
+   39 |   case "B":
+      |   ^~~~
+make: *** [src/subdir.mk:23: src/TP1.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:11:29 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:16:21 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+../src/TP1.c: In function ‘main’:
+../src/TP1.c:55:3: warning: implicit declaration of function ‘suma’ [-Wimplicit-function-declaration]
+   55 |   suma(numeroA, numeroB, &resultado);
+      |   ^~~~
+Finished building: ../src/TP1.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+/usr/bin/ld: ./src/TP1.o: en la función `main':
+/home/irina/eclipse-workspace/TP1/Debug/../src/TP1.c:55: referencia a `suma' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [makefile:43: TP1] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+15:16:43 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:16:46 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:19:00 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:19:04 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:20:08 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:20:32 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:20:33 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:24:23 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:24:26 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:25:27 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+Building file: ../src/TP1.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/TP1.d" -MT"src/TP1.o" -o "src/TP1.o" "../src/TP1.c"
+Finished building: ../src/TP1.c
+ 
+Building target: TP1
+Invoking: GCC C Linker
+gcc  -o "TP1" ./src/TP1.o ./src/utn.o   
+Finished building target: TP1
+ 
+15:25:29 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:25:50 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.
+15:26:08 **** Incremental Build of configuration Debug for project TP1 ****
+make all 
+make: No se hace nada para 'all'.

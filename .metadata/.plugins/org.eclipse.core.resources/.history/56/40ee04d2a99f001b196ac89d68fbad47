@@ -77,7 +77,7 @@ int utn_division(float operador1,float operador2, float* pResultado){
 	int retorno=-1;
 	if(operador2!=0){
 		*pResultado=operador1/operador2;
-		retorno=1;
+		retorno=0;
 	}
 	return retorno;
 }

@@ -9,7 +9,7 @@
 #include <stdlib.h>
 #include <stdio_ext.h>
 
-//------------------------------------------------------------------------------------------------------------------------------------------
+
 void utn_imprimirMensaje (char* mensaje){
 	printf("%s",mensaje);
 }
@@ -58,28 +58,4 @@ int utn_getnumeroRango(int* numero,char* mensaje, char* mensajeError,int reinten
 	return retorno;
 }
 //-----------------------------------------------------------------------------------------------------------------------------------------------
-int utn_suma(float operador1,float operador2,float* pResultado){
-	*pResultado=operador1+operador2;
-	return 0;
-}
-//------------------------------------------------------------------------------------------------------------------------------------------
-int utn_resta(float operador1, float operador2, float*pResultado){
-	*pResultado=operador1-operador2;
-	return 0;
-}
-//------------------------------------------------------------------------------------------------------------------------------------------
-int utn_multiplicacion(float operador1, float operador2, float* pResultado){
-	*pResultado=operador1*operador2;
-	return 0;
-}
-//------------------------------------------------------------------------------------------------------------------------------------------
-int utn_division(float operador1,float operador2, float* pResultado){
-	int retorno=-1;
-	if(operador2!=0){
-		*pResultado=operador1/operador2;
-		retorno=1;
-	}
-	return retorno;
-}
-//------------------------------------------------------------------------------------------------------------------------------------------
 
